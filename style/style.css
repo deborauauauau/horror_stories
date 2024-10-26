@@ -1,0 +1,30 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+html, body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding: 0 20px;
+    border: 1px solid #ddd;
+}
+
+menu > img{
+    width: 200px;
+}
+
+menu > ul{
+    height: 100%;
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+    padding: 5px 0;
+    font-size: 1.3em;
+}
