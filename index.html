@@ -34,7 +34,7 @@
     /* Carrossel */
     .carousel-item img {
       filter: brightness(60%);
-      height: 75vh;
+      height: 60vh;
       object-fit: cover;
     }
     .carousel-caption h5 {
@@ -64,6 +64,8 @@
     .card-img-top {
       border-top-left-radius: 10px;
       border-top-right-radius: 10px;
+      object-fit: cover;
+      height: 200px;
     }
     .btn-danger {
       background-color: #ff4c4c;
@@ -86,14 +88,19 @@
 <body>
   
   <!-- Navbar -->
-  <nav class="navbar navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Histórias de Terror</a>
-      <ul class="navbar-nav flex-row">
-        <li class="nav-item"><a class="nav-link mx-3" href="#historias">Histórias</a></li>
-        <li class="nav-item"><a class="nav-link mx-3" href="#sobre">Sobre</a></li>
-        <li class="nav-item"><a class="nav-link mx-3" href="#contato">Contato</a></li>
-      </ul>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#historias">Histórias</a></li>
+          <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+        </ul>
+      </div>
     </div>
   </nav>
 
@@ -129,7 +136,7 @@
   <div class="container my-5" id="historias">
     <h2 class="text-center mb-5">Histórias de Terror</h2>
     <div class="row g-4">
-      <div class="col-md-4">
+      <div class="col-12 col-md-6 col-lg-4">
         <div class="card story-card">
           <img src="img/IMAGENS/bride.jpg" class="card-img-top" alt="História 1">
           <div class="card-body">
@@ -139,7 +146,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-12 col-md-6 col-lg-4">
         <div class="card story-card">
           <img src="img/IMAGENS/cemitério de reggor.png" class="card-img-top" alt="História 2">
           <div class="card-body">
@@ -149,7 +156,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-12 col-md-6 col-lg-4">
         <div class="card story-card">
           <img src="img/IMAGENS/unnamed.jpg" class="card-img-top" alt="História 3">
           <div class="card-body">
