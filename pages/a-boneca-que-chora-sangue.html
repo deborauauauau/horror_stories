@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Boneca que Chora Sangue - Histórias de Terror</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* Estilos Gerais */
+    body {
+      background-color: #1a1a1a;
+      color: #e0e0e0;
+      font-family: 'Lora', serif;
+    }
+    .navbar-brand, .nav-link {
+      font-family: 'Creepster', cursive;
+      font-size: 1.5rem;
+      color: #ff4c4c !important;
+    }
+    .navbar-dark .nav-link:hover {
+      color: #ff7518 !important;
+    }
+
+    /* Cabeçalho da História */
+    .header-image {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      filter: brightness(60%);
+    }
+    .header-title {
+      font-family: 'Creepster', cursive;
+      font-size: 2.5rem;
+      color: #ff4c4c;
+      text-shadow: 2px 2px 8px #000;
+    }
+    .header-subtitle {
+      color: #e0e0e0;
+      font-size: 1.3rem;
+    }
+
+    /* Texto da História */
+    .story-content {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      color: #b3b3b3;
+    }
+
+    /* Rodapé */
+    footer {
+      background-color: #000;
+      color: #e0e0e0;
+      padding: 1.5rem 0;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html">Histórias de Terror</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="./todas-historias.html">Histórias</a></li>
+          <li class="nav-item"><a class="nav-link" href="./sobre">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="./contato">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Cabeçalho da História -->
+  <header class="text-center my-5">
+    <img src="img/IMAGENS/capa_historia_boneca_que_chora_sangue.jpg" alt="Imagem da História" class="header-image mb-4">
+    <h1 class="header-title">A Boneca que Chora Sangue</h1>
+  </header>
+
+  <!-- Conteúdo da História -->
+  <div class="container my-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="story-content">
+          <p>Em uma pequena vila, havia uma antiga loja de brinquedos onde uma boneca peculiar estava exposta. Seus
+            olhos de vidro pareciam seguir todos que passavam. Clara, uma menina curiosa, ficou fascinada pela boneca
+            e convenceu seus pais a comprá-la. Na primeira noite, Clara ouviu um som estranho vindo do quarto onde a
+            boneca estava.</p>
+
+          <p>Ao investigar, encontrou a boneca sentada na cama, com lágrimas vermelhas escorrendo de seus olhos.
+            Assustada, Clara chamou seus pais, mas quando eles chegaram, a boneca estava normal. Na noite seguinte, o
+            fenômeno se repetiu, e Clara começou a ter pesadelos com a boneca.</p>
+
+          <p>Determinada a descobrir a verdade, Clara pesquisou sobre a boneca e descobriu que ela pertencia a uma
+            menina que desapareceu misteriosamente anos atrás. A lenda dizia que a boneca chorava sangue sempre que
+            estava prestes a acontecer algo terrível.</p>
+
+          <p>Uma noite, Clara acordou com a boneca ao seu lado, chorando sangue novamente. De repente, a boneca
+            começou a falar com uma voz fria e distante: “Você será a próxima.” Clara tentou se livrar da boneca, mas
+            ela sempre reaparecia.</p>
+
+          <p>Desesperada, Clara decidiu enterrar a boneca no quintal. No entanto, na manhã seguinte, a boneca estava de
+            volta ao seu quarto, com um sorriso sinistro no rosto. Clara percebeu que estava presa em um ciclo de terror,
+            sem escapatória.</p>
+        </div>
+        <a href="./todas-historias.html" class="btn btn-danger mt-4">Voltar para Histórias</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>&copy; <span id="ano"></span> Histórias de Terror. Todos os direitos reservados.</p>
+  </footer>
+  
+  <script>
+    // Exibe o ano atual automaticamente
+    document.getElementById("ano").textContent = new Date().getFullYear();
+  </script>
+  <!-- Scripts do Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

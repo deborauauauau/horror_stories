@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Título da História - Histórias de Terror</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* Estilos Gerais */
+    body {
+      background-color: #1a1a1a;
+      color: #e0e0e0;
+      font-family: 'Lora', serif;
+    }
+    .navbar-brand, .nav-link {
+      font-family: 'Creepster', cursive;
+      font-size: 1.5rem;
+      color: #ff4c4c !important;
+    }
+    .navbar-dark .nav-link:hover {
+      color: #ff7518 !important;
+    }
+
+    /* Cabeçalho da História */
+    .header-image {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      filter: brightness(60%);
+    }
+    .header-title {
+      font-family: 'Creepster', cursive;
+      font-size: 2.5rem;
+      color: #ff4c4c;
+      text-shadow: 2px 2px 8px #000;
+    }
+    .header-subtitle {
+      color: #e0e0e0;
+      font-size: 1.3rem;
+    }
+
+    /* Texto da História */
+    .story-content {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      color: #b3b3b3;
+    }
+
+    /* Rodapé */
+    footer {
+      background-color: #000;
+      color: #e0e0e0;
+      padding: 1.5rem 0;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html">Histórias de Terror</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="./todas-historias.html">Histórias</a></li>
+          <li class="nav-item"><a class="nav-link" href="./sobre">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="./contato">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Cabeçalho da História -->
+  <header class="text-center my-5">
+    <img src="img/IMAGENS/capa_historia.jpg" alt="Imagem da História" class="header-image mb-4">
+    <h1 class="header-title">A CRIAÇÃO DO LAGO NEGRO</h1>
+  </header>
+
+  <!-- Conteúdo da História -->
+  <div class="container my-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="story-content">
+          <p><strong>Introdução:</strong> Era uma noite escura e tempestuosa...</p>
+          <p>Cinco amigos – Lucas, Ana, Pedro, Clara e João – decidiram passar o fim de semana no Lago Negro, um
+            lugar envolto em lendas sombrias. Lucas, sempre cético, ria das histórias que os moradores contavam sobre
+            uma criatura que habitava o fundo do lago. "São só superstições", ele disse, enquanto montavam as barracas
+            à beira <br>
+
+            À noite, ao redor da fogueira, Pedro ouviu um barulho estranho vindo da água. “Vocês ouviram isso?”
+            Disse, mas todos riram nervosos. Ana, a mais calorosa, decidiu se aproximar do lago para provar que nada
+            existia. Quando se abaixou para tocar a água, um som gorgolejante e grotesco se fez ouvir, e algo viscoso e
+            escuro agarrou seu braço, puxando-a violenta <br>
+
+            Os gritos de Ana ecoaram pela floresta. Clara tentou correr, mas tropeçou e caiu, enquanto João ficou
+            paralisado de medo. Lucas e Pedro queriam salvá-la, mas só viram bolhas subindo à superfície do lago. De
+            repente, uma criatura monstruosa emergiu, sua pele coberta por algas, os olhos amarelos brilhando <br>
+
+            Um a um eles foram arrastados para o lago, gritando por socorro. Na manhã seguinte, apenas o silêncio
+            permanente no acampamento. A lenda se provou verdadeira: a criatura do Lago Negro tinha novas
+            prisioneiras nas profundezas.</p>
+          <p>Mais detalhes, descrições e elementos que intensifiquem a atmosfera de terror da história.</p>
+          <p>Por fim, conclua a história com um desfecho surpreendente ou um gancho assustador que deixará o leitor pensando sobre o que acabou de ler.</p>
+        </div>
+        <a href="./todas-historias.html" class="btn btn-danger mt-4">Voltar para Histórias</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>&copy; <span id="ano"></span> Histórias de Terror. Todos os direitos reservados.</p>
+  </footer>
+  
+  <script>
+    // Exibe o ano atual automaticamente
+    document.getElementById("ano").textContent = new Date().getFullYear();
+  </script>
+  <!-- Scripts do Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

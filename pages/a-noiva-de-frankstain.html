@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Noiva de Frankenstein - Histórias de Terror</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* Estilos Gerais */
+    body {
+      background-color: #1a1a1a;
+      color: #e0e0e0;
+      font-family: 'Lora', serif;
+    }
+    .navbar-brand, .nav-link {
+      font-family: 'Creepster', cursive;
+      font-size: 1.5rem;
+      color: #ff4c4c !important;
+    }
+    .navbar-dark .nav-link:hover {
+      color: #ff7518 !important;
+    }
+
+    /* Cabeçalho da História */
+    .header-image {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      filter: brightness(60%);
+    }
+    .header-title {
+      font-family: 'Creepster', cursive;
+      font-size: 2.5rem;
+      color: #ff4c4c;
+      text-shadow: 2px 2px 8px #000;
+    }
+    .header-subtitle {
+      color: #e0e0e0;
+      font-size: 1.3rem;
+    }
+
+    /* Texto da História */
+    .story-content {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      color: #b3b3b3;
+    }
+
+    /* Rodapé */
+    footer {
+      background-color: #000;
+      color: #e0e0e0;
+      padding: 1.5rem 0;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html">Histórias de Terror</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="./todas-historias.html">Histórias</a></li>
+          <li class="nav-item"><a class="nav-link" href="./sobre">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="./contato">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Cabeçalho da História -->
+  <header class="text-center my-5">
+    <img src="img/IMAGENS/capa_historia_noiva_frankenstein.jpg" alt="Imagem da História" class="header-image mb-4">
+    <h1 class="header-title">A Noiva de Frankenstein</h1>
+  </header>
+
+  <!-- Conteúdo da História -->
+  <div class="container my-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="story-content">
+          <p>Na escuridão de uma noite tempestuosa, o Dr. Victor Frankenstein trabalhava freneticamente em seu
+            laboratório. Ele havia prometido criar uma companheira para sua criatura, uma noiva que traria paz ao
+            monstro solitário. Com um trovão ensurdecedor, a eletricidade percorreu os fios, dando vida à nova criação.
+            Seus olhos se abriram lentamente, revelando um brilho sinistro.</p>
+
+          <p>A Noiva de Frankenstein, porém, não era como ele esperava. Seus olhos, cheios de ódio e dor, fixaram-se no
+            doutor. Ela se levantou, seus movimentos desajeitados, mas determinados. “Por que me trouxe a este mundo
+            de sofrimento?” ela sussurrou, sua voz ecoando como um lamento.</p>
+
+          <p>Desesperado, Victor tentou acalmá-la, mas era tarde demais. A noiva, com uma força sobre-humana,
+            quebrou as correntes que a prendiam e avançou sobre ele. O laboratório foi tomado pelo caos, com vidros
+            quebrando e máquinas explodindo. A criatura original, atraída pelo tumulto, entrou e viu sua companheira
+            em fúria.</p>
+
+          <p>Em um momento de compreensão mútua, os dois monstros se uniram contra seu criador. Victor, percebendo
+            seu erro fatal, tentou fugir, mas foi capturado. A última coisa que ouviu foi o som de seus próprios gritos,
+            enquanto a escuridão o envolvia.</p>
+        </div>
+        <a href="./todas-historias.html" class="btn btn-danger mt-4">Voltar para Histórias</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>&copy; <span id="ano"></span> Histórias de Terror. Todos os direitos reservados.</p>
+  </footer>
+  
+  <script>
+    // Exibe o ano atual automaticamente
+    document.getElementById("ano").textContent = new Date().getFullYear();
+  </script>
+  <!-- Scripts do Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

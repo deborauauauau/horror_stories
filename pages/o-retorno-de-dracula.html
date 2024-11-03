@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>O Retorno do Drácula - Histórias de Terror</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* Estilos Gerais */
+    body {
+      background-color: #1a1a1a;
+      color: #e0e0e0;
+      font-family: 'Lora', serif;
+    }
+    .navbar-brand, .nav-link {
+      font-family: 'Creepster', cursive;
+      font-size: 1.5rem;
+      color: #ff4c4c !important;
+    }
+    .navbar-dark .nav-link:hover {
+      color: #ff7518 !important;
+    }
+
+    /* Cabeçalho da História */
+    .header-image {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      filter: brightness(60%);
+    }
+    .header-title {
+      font-family: 'Creepster', cursive;
+      font-size: 2.5rem;
+      color: #ff4c4c;
+      text-shadow: 2px 2px 8px #000;
+    }
+    .header-subtitle {
+      color: #e0e0e0;
+      font-size: 1.3rem;
+    }
+
+    /* Texto da História */
+    .story-content {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      color: #b3b3b3;
+    }
+
+    /* Rodapé */
+    footer {
+      background-color: #000;
+      color: #e0e0e0;
+      padding: 1.5rem 0;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html">Histórias de Terror</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="./todas-historias.html">Histórias</a></li>
+          <li class="nav-item"><a class="nav-link" href="./sobre">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="./contato">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Cabeçalho da História -->
+  <header class="text-center my-5">
+    <img src="img/IMAGENS/capa_historia_dracula.jpg" alt="Imagem da História" class="header-image mb-4">
+    <h1 class="header-title">O RETORNO DO DRÁCULA</h1>
+  </header>
+
+  <!-- Conteúdo da História -->
+  <div class="container my-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="story-content">
+          <p>A noite cobria a Transilvânia com um manto de neblina e a lua cheia iluminava o castelo de Drácula,
+            despertando-o de seu sono milenar. Com um sorriso cruel nos lábios, o Conde emergiu de seu caixão,
+            sedento por sangue fresco.</p>
+
+          <p>Na vila próxima, a jovem Ana sonhava com um amor proibido. Ignorando as lendas locais, ela se aventurou
+            no bosque sombrio, atraída por uma melodia hipnotizante. Ao chegar ao castelo, a porta se abriu sozinha,
+            revelando um salão luxuoso e a figura imponente de Drácula.</p>
+
+          <p>Com um movimento suave, o Conde a convidou para uma dança macabra. Ana, hipnotizada por seus olhos
+            rubros e seduzida por sua promessa de amor eterno, aceitou. Mas a dança se transformou em um pesadelo
+            quando Drácula a mordeu, transformando-a em sua nova noiva.</p>
+
+          <p>Na manhã seguinte, os aldeões encontraram Ana pálida e fria, com duas pequenas marcas em seu pescoço. A
+            lenda de Drácula voltou a assombrar a Transilvânia, e a noite se tornou um pesadelo para todos aqueles que
+            ousavam sair de casa.</p>
+        </div>
+        <a href="./todas-historias.html" class="btn btn-danger mt-4">Voltar para Histórias</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>&copy; <span id="ano"></span> Histórias de Terror. Todos os direitos reservados.</p>
+  </footer>
+  
+  <script>
+    // Exibe o ano atual automaticamente
+    document.getElementById("ano").textContent = new Date().getFullYear();
+  </script>
+  <!-- Scripts do Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

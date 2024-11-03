@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Sombra que Me Acompanha - Histórias de Terror</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* Estilos Gerais */
+    body {
+      background-color: #1a1a1a;
+      color: #e0e0e0;
+      font-family: 'Lora', serif;
+    }
+    .navbar-brand, .nav-link {
+      font-family: 'Creepster', cursive;
+      font-size: 1.5rem;
+      color: #ff4c4c !important;
+    }
+    .navbar-dark .nav-link:hover {
+      color: #ff7518 !important;
+    }
+
+    /* Cabeçalho da História */
+    .header-image {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      filter: brightness(60%);
+    }
+    .header-title {
+      font-family: 'Creepster', cursive;
+      font-size: 2.5rem;
+      color: #ff4c4c;
+      text-shadow: 2px 2px 8px #000;
+    }
+    .header-subtitle {
+      color: #e0e0e0;
+      font-size: 1.3rem;
+    }
+
+    /* Texto da História */
+    .story-content {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      color: #b3b3b3;
+    }
+
+    /* Rodapé */
+    footer {
+      background-color: #000;
+      color: #e0e0e0;
+      padding: 1.5rem 0;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html">Histórias de Terror</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="./todas-historias.html">Histórias</a></li>
+          <li class="nav-item"><a class="nav-link" href="./sobre">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="./contato">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Cabeçalho da História -->
+  <header class="text-center my-5">
+    <img src="img/IMAGENS/capa_historia_sombra_que_me_acompanha.jpg" alt="Imagem da História" class="header-image mb-4">
+    <h1 class="header-title">A Sombra que Me Acompanha</h1>
+  </header>
+
+  <!-- Conteúdo da História -->
+  <div class="container my-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="story-content">
+          <p>Desde criança, Lucas sentia uma presença estranha ao seu redor. Uma sombra que parecia segui-lo onde quer
+            que fosse. No início, ele pensava que era apenas sua imaginação, mas com o passar dos anos, a sombra se
+            tornou mais real e ameaçadora.</p>
+
+          <p>Uma noite, enquanto caminhava sozinho por uma rua deserta, Lucas percebeu que a sombra estava mais
+            próxima do que nunca. Ele acelerou o passo, mas a sombra o acompanhava, imitando cada movimento. O
+            medo tomou conta de seu coração quando ele ouviu um sussurro gelado: “Você não pode fugir de mim.”</p>
+
+          <p>Desesperado, Lucas correu para casa e trancou todas as portas e janelas. Mas a sombra estava lá, dentro de
+            sua casa, esperando. Ele tentou acender todas as luzes, mas a escuridão parecia engolir a luz. A sombra se
+            aproximou, e Lucas sentiu um frio mortal ao seu redor.</p>
+
+          <p>“Quem é você?” ele gritou, mas a única resposta foi um riso sinistro. A sombra se fundiu com a escuridão,
+            envolvendo Lucas em um abraço gelado. Ele tentou lutar, mas suas forças foram drenadas. A última coisa que
+            viu foi a sombra tomando sua forma, enquanto ele desaparecia na escuridão eterna.</p>
+        </div>
+        <a href="./todas-historias.html" class="btn btn-danger mt-4">Voltar para Histórias</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>&copy; <span id="ano"></span> Histórias de Terror. Todos os direitos reservados.</p>
+  </footer>
+  
+  <script>
+    // Exibe o ano atual automaticamente
+    document.getElementById("ano").textContent = new Date().getFullYear();
+  </script>
+  <!-- Scripts do Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

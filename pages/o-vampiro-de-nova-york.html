@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>O Vampiro de Nova York - Histórias de Terror</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* Estilos Gerais */
+    body {
+      background-color: #1a1a1a;
+      color: #e0e0e0;
+      font-family: 'Lora', serif;
+    }
+    .navbar-brand, .nav-link {
+      font-family: 'Creepster', cursive;
+      font-size: 1.5rem;
+      color: #ff4c4c !important;
+    }
+    .navbar-dark .nav-link:hover {
+      color: #ff7518 !important;
+    }
+
+    /* Cabeçalho da História */
+    .header-image {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      filter: brightness(60%);
+    }
+    .header-title {
+      font-family: 'Creepster', cursive;
+      font-size: 2.5rem;
+      color: #ff4c4c;
+      text-shadow: 2px 2px 8px #000;
+    }
+    .header-subtitle {
+      color: #e0e0e0;
+      font-size: 1.3rem;
+    }
+
+    /* Texto da História */
+    .story-content {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      color: #b3b3b3;
+    }
+
+    /* Rodapé */
+    footer {
+      background-color: #000;
+      color: #e0e0e0;
+      padding: 1.5rem 0;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html">Histórias de Terror</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="./todas-historias.html">Histórias</a></li>
+          <li class="nav-item"><a class="nav-link" href="./sobre">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="./contato">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Cabeçalho da História -->
+  <header class="text-center my-5">
+    <img src="img/IMAGENS/capa_historia_vampiro.jpg" alt="Imagem da História" class="header-image mb-4">
+    <h1 class="header-title">O VAMPIRO DE NOVA YORK</h1>
+  </header>
+
+  <!-- Conteúdo da História -->
+  <div class="container my-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="story-content">
+          <p>A névoa que cobria Nova York era tão espessa que parecia sugar a vida das ruas. Em um beco escuro, onde
+            a luz dos postes de rua mal penetrava, morava Elias, um vampiro centenário. Suas presas afiadas brilhavam
+            sob o luar, enquanto observava a cidade que nunca dormia. A cada noite, ele descia das alturas de seu antigo
+            prédio, esgueirando-se pelas sombras em busca de novas vítimas.</p>
+
+          <p>Uma jovem fotógrafa, chamada Anya, estava trabalhando em um projeto sobre a cidade, explorando os
+            cantos mais obscuros. Sem saber, ela estava se aproximando perigosamente do território de Elias. Uma
+            noite, enquanto fotografava um prédio abandonado, sentiu uma presença sinistra. Ao se virar, seus olhos se
+            encontraram com os de Elias.</p>
+
+          <p>O coração de Anya disparou, mas a curiosidade a impulsionou a se aproximar. Elias, fascinado por sua
+            beleza e coragem, a convidou para entrar em seu mundo. Anya, hipnotizada por seus olhos vermelhos e voz
+            suave, aceitou. No entanto, ela logo descobriu que a beleza de Elias escondia uma criatura cruel e sedenta
+            por sangue.</p>
+
+          <p>Presa em uma teia de mentiras e sedução, Anya se viu dividida entre o fascínio e o terror. Ela precisava
+            escapar, mas como? Elias era poderoso e a cidade estava sob seu domínio. A cada noite, a névoa se tornava
+            mais densa, e a sombra de Elias se estendia por mais ruas. Nova York estava à beira do caos, e apenas Anya
+            poderia salvar a cidade das garras do vampiro centenário.</p>
+        </div>
+        <a href="./todas-historias.html" class="btn btn-danger mt-4">Voltar para Histórias</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>&copy; <span id="ano"></span> Histórias de Terror. Todos os direitos reservados.</p>
+  </footer>
+  
+  <script>
+    // Exibe o ano atual automaticamente
+    document.getElementById("ano").textContent = new Date().getFullYear();
+  </script>
+  <!-- Scripts do Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
